@@ -1,0 +1,25 @@
+{
+  "categories": ["Analytics", "Team Tools", "Integrations", "Security"],
+  "items": {
+    "Analytics": [
+      { "title": "Real-Time Dashboards", "description": "Live data, beautiful charts, zero lag." },
+      { "title": "Custom Reports", "description": "Build reports that answer your actual questions." },
+      { "title": "Predictive Modeling", "description": "AI-driven forecasting based on your data trends." }
+    ],
+    "Team Tools": [
+      { "title": "Shared Workspaces", "description": "Collaborate on documents, tasks, and ideas in one place." },
+      { "title": "Smart Notifications", "description": "Get pinged about what matters, not about everything." },
+      { "title": "Role-Based Access", "description": "Fine-grained permissions for every team member." }
+    ],
+    "Integrations": [
+      { "title": "500+ Connectors", "description": "From Slack to Salesforce, connect what you already use." },
+      { "title": "REST API", "description": "Build custom integrations with our developer-friendly API." },
+      { "title": "Webhooks", "description": "Automate workflows across your entire stack." }
+    ],
+    "Security": [
+      { "title": "E2E Encryption", "description": "Your data is encrypted in transit and at rest." },
+      { "title": "SSO & SAML", "description": "Enterprise single sign-on out of the box." },
+      { "title": "Audit Logs", "description": "Track every action across your organization." }
+    ]
+  }
+}

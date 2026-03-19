@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="mt-12 sm:mt-20">
+  <header class="max-w-3xl">
+    <h1 class="font-display text-4xl sm:text-6xl tracking-tight text-text-primary">
+      {{ simpleTitle }}
+    </h1>
+    <p class="mt-4 text-base/7 text-text-secondary max-w-2xl">
+      {{ simpleIntro }}
+    </p>
+    <div class="mt-6 w-16 h-1 bg-accent rounded-theme-sm"></div>
+  </header>
+  {% if content | trim %}
+  <div class="mt-14 sm:mt-18">
+    {{ content | safe }}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

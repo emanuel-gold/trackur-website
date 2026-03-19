@@ -1,0 +1,25 @@
+{
+  "name": "spotlight-njk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./tailwind.css -o ./_site/css/styles.css --minify",
+    "build:11ty": "npx @11ty/eleventy",
+    "build": "npm run build:css && npm run build:11ty",
+    "dev:css": "npx @tailwindcss/cli -i ./tailwind.css -o ./_site/css/styles.css --watch",
+    "dev:11ty": "npx @11ty/eleventy --serve",
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:11ty\""
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@tailwindcss/cli": "^4.1.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "concurrently": "^9.0.0",
+    "luxon": "^3.0.0",
+    "markdown-it-anchor": "^9.0.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

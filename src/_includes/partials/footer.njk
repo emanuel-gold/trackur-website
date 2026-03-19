@@ -1,0 +1,59 @@
+<footer class="mt-24 flex-none">
+  {# Connect CTA section #}
+  <div class="bg-bg-alt">
+    <div class="w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-16 sm:py-20">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="font-display text-3xl sm:text-5xl tracking-tight text-text-primary">Stay in the loop</h2>
+        <p class="mt-4 text-text-secondary">Product updates, new features, and the occasional thought on job searching.</p>
+        <form action="/thank-you/" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            aria-label="Email address"
+            required
+            class="flex-1 px-4 py-3 text-sm bg-surface border-theme rounded-theme text-text-primary placeholder:text-text-muted focus:outline-hidden focus:ring-2 focus:ring-ring-default"
+          />
+          <button type="submit" class="px-6 py-3 text-sm font-semibold bg-accent text-text-inverse rounded-theme hover:bg-accent-hover transition-theme">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {# Marquee strip #}
+  <div class="overflow-hidden py-3 bg-accent">
+    <div class="flex whitespace-nowrap animate-marquee">
+      {% for repeat in range(0, 6) %}
+        {% for message in marquee %}
+        <span class="mx-6 text-sm font-semibold tracking-wide text-text-inverse">
+          {{ message }}
+        </span>
+        <span class="mx-3 text-text-inverse/50">&bull;</span>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {# Bottom bar #}
+  <div class="w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-12">
+    <div class="py-8 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+      <div class="flex flex-wrap gap-x-1 gap-y-1">
+        {% for item in navigation %}
+        <a href="{{ item.href }}" class="px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+          {{ item.label }}
+        </a>
+        {% endfor %}
+        <a href="/privacy/" class="px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+          Privacy
+        </a>
+        <a href="/terms/" class="px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+          Terms
+        </a>
+      </div>
+      <p class="text-sm text-text-muted">
+        &copy; {% year %} {{ meta.title }}. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

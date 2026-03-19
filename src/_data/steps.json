@@ -1,0 +1,17 @@
+[
+  {
+    "number": "01",
+    "title": "Sign up",
+    "description": "Create a Trackur account in seconds."
+  },
+  {
+    "number": "02",
+    "title": "Add jobs",
+    "description": "Add your job applications and where you're at in the process, next steps, and dates."
+  },
+  {
+    "number": "03",
+    "title": "Track progress",
+    "description": "That's it! Trackur helps you visualize your job hunt and keeps your progress in view."
+  }
+]

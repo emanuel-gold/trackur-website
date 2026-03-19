@@ -1,0 +1,8 @@
+[
+  { "name": "Planetaria", "logo": "/images/logos/planetaria.svg" },
+  { "name": "Animaginary", "logo": "/images/logos/animaginary.svg" },
+  { "name": "HelioStream", "logo": "/images/logos/helio-stream.svg" },
+  { "name": "cosmOS", "logo": "/images/logos/cosmos.svg" },
+  { "name": "OpenShuttle", "logo": "/images/logos/open-shuttle.svg" },
+  { "name": "Starbucks", "logo": "/images/logos/starbucks.svg" }
+]

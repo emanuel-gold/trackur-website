@@ -1,0 +1,16 @@
+{ 
+  "faq": [
+    {
+      "question": "Will trackur always be free?",
+      "answer": "The core product — tracking your job applications — will always be free. If we add features that cost us money to run (like file storage or email notifications), those may have a paid tier."
+    },
+    {
+      "question": "How do you make money?",
+      "answer": "Right now, we don't. This is a side project built by someone who needed it. If you find it useful, you can buy us a coffee."
+    },
+    {
+      "question": "Can I export my data?",
+      "answer": "Yes. You can export all your data as CSV at any time. No lock-in."
+    }
+  ]
+}

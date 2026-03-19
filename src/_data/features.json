@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Kanban pipeline",
+    "description": "See every application at a glance. Drag cards between stages as your applications move from Applied to Accepted.",
+    "icon": "layers"
+  },
+  {
+    "title": "Nothing to configure",
+    "description": "Focus on applying: No complicated setup, no wrestling with formatting, no onboarding wizard to click through.",
+    "icon": "search"
+  },
+  {
+    "title": "Your data stays YOURS",
+    "description": "Miss the spreadsheets? Download your data to a CSV. As easy as texting your ex. Your data is always yours.",
+    "icon": "users"
+  }
+]

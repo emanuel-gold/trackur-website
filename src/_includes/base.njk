@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if pageTitle %}{{ pageTitle }} - {{ meta.title }}{% else %}{{ meta.titleDefault }}{% endif %}</title>
+    <meta name="description" content="{{ pageDescription or meta.description }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script>
+      (function() {
+        var dark = localStorage.getItem('theme');
+        if (dark === 'dark' || (!dark && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="flex min-h-full bg-bg text-text-primary">
+    {% block body %}{% endblock %}
+    <script src="/js/theme.js"></script>
+    <script src="/js/mobile-nav.js"></script>
+  </body>
+</html>

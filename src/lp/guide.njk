@@ -1,0 +1,186 @@
+---
+layout: layout.njk
+pageTitle: "Free Guide — The Future of Team Collaboration"
+pageDescription: "Download our comprehensive guide on building high-performing distributed teams. 5 chapters, 40+ pages of actionable insights."
+permalink: false
+---
+
+{# ── HERO ── #}
+<section class="mt-10 sm:mt-16 lg:mt-20">
+  <div class="text-center max-w-2xl mx-auto mb-12" style="animation: fadeInUp 0.6s ease-out both">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 border-theme rounded-theme-sm bg-accent-surface text-accent text-xs font-mono font-medium mb-6">
+      <svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10v6M12 6h.01M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0"/></svg>
+      Free Download &middot; No spam, ever
+    </div>
+    <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl tracking-tight text-text-primary leading-[0.95]">
+      The Future of<br><span class="text-accent">Team Collaboration</span>
+    </h1>
+    <p class="mt-4 text-text-secondary text-base/7">
+      40+ pages of research, frameworks, and playbooks from teams at Canopy, Stripe, and Figma.
+    </p>
+  </div>
+
+  {# ── SPLIT LAYOUT: CONTENT + FORM ── #}
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+    {# LEFT: Guide contents #}
+    <div class="lg:col-span-7 space-y-0" style="animation: fadeInUp 0.6s ease-out 0.2s both">
+      {# Guide preview card #}
+      <div class="p-6 sm:p-8 border-theme rounded-theme-2xl bg-surface shadow-theme-sm">
+        <h2 class="font-display text-xl sm:text-2xl tracking-tight text-text-primary mb-6">What's inside</h2>
+
+        {% set chapters = [
+          {
+            "num": "01",
+            "title": "The State of Team Collaboration in 2026",
+            "desc": "Data from 2,000+ companies on how distributed teams actually work — and where they lose the most time."
+          },
+          {
+            "num": "02",
+            "title": "The Context Problem",
+            "desc": "Why 73% of knowledge workers say they can't find the information they need. The hidden cost of tool fragmentation."
+          },
+          {
+            "num": "03",
+            "title": "Building a Single Source of Truth",
+            "desc": "A practical framework for centralizing knowledge without sacrificing team autonomy. Includes migration checklists."
+          },
+          {
+            "num": "04",
+            "title": "AI-Augmented Workflows",
+            "desc": "How leading teams use AI to automate routine work, surface insights, and reduce meeting overhead by 40%."
+          },
+          {
+            "num": "05",
+            "title": "The Playbook: From Chaos to Clarity",
+            "desc": "Step-by-step implementation guide with templates, timelines, and KPIs from teams who've done it successfully."
+          }
+        ] %}
+
+        <div class="space-y-0 divide-y divide-border-default">
+          {% for ch in chapters %}
+          <div class="py-5 flex gap-4 {% if loop.first %}pt-0{% endif %} {% if loop.last %}pb-0{% endif %}"
+               style="animation: fadeInUp 0.4s ease-out {{ 0.1 * loop.index }}s both">
+            <span class="font-display text-2xl text-accent/30 shrink-0 w-8">{{ ch.num }}</span>
+            <div>
+              <h3 class="text-sm font-semibold text-text-primary">{{ ch.title }}</h3>
+              <p class="mt-1 text-sm/6 text-text-secondary">{{ ch.desc }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      {# Credibility signals #}
+      <div class="mt-6 flex flex-wrap items-center gap-6 px-2">
+        <div class="flex items-center gap-2 text-sm text-text-muted">
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          40+ pages
+        </div>
+        <div class="flex items-center gap-2 text-sm text-text-muted">
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          ~25 min read
+        </div>
+        <div class="flex items-center gap-2 text-sm text-text-muted">
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"/></svg>
+          PDF format
+        </div>
+        <div class="flex items-center gap-2 text-sm text-text-muted">
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          8,500+ downloads
+        </div>
+      </div>
+    </div>
+
+    {# RIGHT: Lead capture form #}
+    <div class="lg:col-span-5 lg:sticky lg:top-8" style="animation: fadeInUp 0.6s ease-out 0.4s both">
+      <div class="p-6 sm:p-8 border-theme rounded-theme-2xl bg-surface shadow-theme-lg">
+        <h2 class="font-display text-lg sm:text-xl tracking-tight text-text-primary">Get your free copy</h2>
+        <p class="mt-2 text-sm text-text-secondary">Fill in your details and we'll send the guide straight to your inbox.</p>
+
+        <form action="/thank-you/" class="mt-6 space-y-4">
+          <div>
+            <label for="guide-name" class="block text-sm font-medium text-text-primary mb-1.5">Full name</label>
+            <input
+              type="text"
+              id="guide-name"
+              name="name"
+              placeholder="Jane Smith"
+              required
+              class="w-full px-4 py-3 text-sm bg-bg border-theme rounded-theme text-text-primary placeholder:text-text-muted focus:outline-hidden focus:ring-2 focus:ring-ring-default transition-theme"
+            />
+          </div>
+          <div>
+            <label for="guide-email" class="block text-sm font-medium text-text-primary mb-1.5">Work email</label>
+            <input
+              type="email"
+              id="guide-email"
+              name="email"
+              placeholder="jane@company.com"
+              required
+              class="w-full px-4 py-3 text-sm bg-bg border-theme rounded-theme text-text-primary placeholder:text-text-muted focus:outline-hidden focus:ring-2 focus:ring-ring-default transition-theme"
+            />
+          </div>
+          <div>
+            <label for="guide-company" class="block text-sm font-medium text-text-primary mb-1.5">Company</label>
+            <input
+              type="text"
+              id="guide-company"
+              name="company"
+              placeholder="Acme Inc."
+              class="w-full px-4 py-3 text-sm bg-bg border-theme rounded-theme text-text-primary placeholder:text-text-muted focus:outline-hidden focus:ring-2 focus:ring-ring-default transition-theme"
+            />
+          </div>
+          <div>
+            <label for="guide-role" class="block text-sm font-medium text-text-primary mb-1.5">Role</label>
+            <select
+              id="guide-role"
+              name="role"
+              class="w-full px-4 py-3 text-sm bg-bg border-theme rounded-theme text-text-primary focus:outline-hidden focus:ring-2 focus:ring-ring-default transition-theme appearance-none"
+              style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 20 20%22><path stroke=%22%236b7280%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%221.5%22 d=%22m6 8 4 4 4-4%22/></svg>'); background-position: right 0.75rem center; background-repeat: no-repeat; background-size: 1.25em 1.25em;"
+            >
+              <option value="" disabled selected>Select your role</option>
+              <option value="engineering">Engineering / Development</option>
+              <option value="product">Product Management</option>
+              <option value="design">Design / UX</option>
+              <option value="leadership">Executive / Leadership</option>
+              <option value="operations">Operations</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full py-4 text-center text-base font-semibold bg-accent text-text-inverse rounded-theme-lg hover:bg-accent-hover shadow-theme hover:shadow-theme-lg transition-theme">
+            Download Free Guide
+            <svg class="inline ml-1 size-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"/></svg>
+          </button>
+
+          <p class="text-xs text-text-muted text-center">
+            By downloading, you agree to receive occasional emails from Canopy. Unsubscribe anytime.
+          </p>
+        </form>
+      </div>
+
+      {# Mini testimonial #}
+      <div class="mt-4 p-4 border-theme rounded-theme-xl bg-surface">
+        <div class="flex items-start gap-3">
+          <div class="size-8 overflow-hidden rounded-theme shrink-0">
+            <img src="/images/photos/image-5.jpg" alt="" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <p class="text-xs/5 text-text-secondary italic">&ldquo;This guide completely changed how we run our quarterly planning. The playbook in Chapter 5 alone saved us weeks.&rdquo;</p>
+            <p class="mt-1.5 text-xs text-text-muted">Alex T. &middot; Head of Ops, StreamCo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mb-12"></div>
+
+<style>
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>

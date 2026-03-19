@@ -1,0 +1,26 @@
+---
+layout: simple.njk
+pageTitle: Blog
+pageDescription: "Product updates and notes on building trackur."
+simpleTitle: "Blog"
+simpleIntro: "Product updates, engineering notes, and occasional thoughts on job searching."
+permalink: /articles/
+---
+
+<div class="grid grid-cols-1 gap-6">
+  {% for article in collections.articles %}
+  <a href="{{ article.url }}" class="group block p-5 sm:p-6 border-theme rounded-theme-xl bg-surface hover:shadow-theme transition-theme">
+    <div class="sm:flex sm:items-baseline sm:gap-6">
+      <time datetime="{{ article.date | isoDate }}" class="flex-none text-xs font-mono text-text-caption sm:w-28">{{ article.date | formatDate }}</time>
+      <div class="mt-2 sm:mt-0">
+        <h2 class="text-base font-semibold text-text-primary group-hover:text-accent transition-colors">{{ article.data.title }}</h2>
+        <p class="mt-1 text-sm/6 text-text-secondary">{{ article.data.description }}</p>
+        <span class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-accent">
+          Read more
+          <svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

@@ -1,0 +1,266 @@
+@import 'tailwindcss';
+@import './styles/prism.css' layer(components);
+
+@plugin '@tailwindcss/typography';
+@config './typography.js';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ═══════════════════════════════════════
+   TRACKUR THEME — Single theme, light + dark
+   Uses Tailwind v4 native palettes: mauve, mist, olive
+   ═══════════════════════════════════════ */
+
+/* ─── Light mode ─── */
+:root {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+
+  --theme-bg: #FFFFFF;
+  --theme-bg-alt: var(--color-mist-50);
+  --theme-surface: #FFFFFF;
+  --theme-surface-muted: var(--color-mist-100);
+  --theme-surface-overlay: rgba(0, 0, 0, 0.5);
+
+  --theme-border: var(--color-mist-200);
+  --theme-border-strong: var(--color-mist-400);
+  --theme-ring: var(--color-mauve-600);
+  --theme-shadow-color: rgba(0, 0, 0, 0.08);
+
+  --theme-text-primary: var(--color-mauve-950);
+  --theme-text-secondary: var(--color-mist-600);
+  --theme-text-muted: var(--color-mist-500);
+  --theme-text-inverse: #FFFFFF;
+  --theme-text-caption: var(--color-olive-600);
+
+  --theme-accent: var(--color-violet-600);
+  --theme-accent-hover: var(--color-mauve-800);
+  --theme-accent-light: var(--color-violet-100);
+  --theme-accent-mid: var(--color-mauve-500);
+  --theme-accent-surface: var(--color-mauve-50);
+
+  --theme-secondary: var(--color-olive-500);
+  --theme-secondary-light: var(--color-olive-50);
+
+  --theme-selection-bg: var(--color-mauve-200);
+  --theme-selection-text: var(--color-mauve-950);
+
+  --theme-code-bg: var(--color-mauve-950);
+  --theme-code-text: var(--color-mist-50);
+
+  --theme-shadow-sm: 0 1px 2px 0 var(--theme-shadow-color);
+  --theme-shadow-md: 0 4px 6px -1px var(--theme-shadow-color), 0 2px 4px -2px var(--theme-shadow-color);
+  --theme-shadow-lg: 0 10px 15px -3px var(--theme-shadow-color), 0 4px 6px -4px var(--theme-shadow-color);
+  --theme-shadow-xl: 0 20px 25px -5px var(--theme-shadow-color), 0 8px 10px -6px var(--theme-shadow-color);
+}
+
+/* ─── Dark mode ─── */
+.dark {
+  /* Mauve-tinted backgrounds for warmth */
+  --theme-bg: var(--color-mauve-950);
+  --theme-bg-alt: #1A1128;
+  --theme-surface: #1A1128;
+  --theme-surface-muted: var(--color-mauve-800);
+  --theme-surface-overlay: rgba(0, 0, 0, 0.7);
+
+  /* Mauve-tinted borders for cohesion */
+  --theme-border: #2D1F42;
+  --theme-border-strong: var(--color-mist-500);
+  --theme-ring: var(--color-mauve-300);
+  --theme-shadow-color: rgba(0, 0, 0, 0.3);
+
+  /* Warmer text hierarchy */
+  --theme-text-primary: var(--color-mist-100);
+  --theme-text-secondary: var(--color-mauve-200);
+  --theme-text-muted: var(--color-mist-500);
+  --theme-text-inverse: var(--color-mauve-950);
+  --theme-text-caption: var(--color-olive-400);
+
+  /* Brighter accent for visibility */
+  --theme-accent: var(--color-violet-400);
+  --theme-accent-hover: var(--color-mauve-200);
+  --theme-accent-light: var(--color-mauve-950);
+  --theme-accent-mid: var(--color-mauve-400);
+  --theme-accent-surface: var(--color-mauve-900);
+
+  --theme-secondary: var(--color-olive-400);
+  --theme-secondary-light: var(--color-olive-950);
+
+  --theme-selection-bg: var(--color-mauve-600);
+  --theme-selection-text: #FFFFFF;
+
+  --theme-code-bg: var(--color-mauve-950);
+  --theme-code-text: var(--color-mist-100);
+}
+
+/* ═══════════════════════════════════════
+   TAILWIND THEME — References CSS vars
+   ═══════════════════════════════════════ */
+
+@theme {
+  --color-bg: var(--theme-bg);
+  --color-bg-alt: var(--theme-bg-alt);
+  --color-surface: var(--theme-surface);
+  --color-surface-muted: var(--theme-surface-muted);
+  --color-surface-overlay: var(--theme-surface-overlay);
+
+  --color-border-default: var(--theme-border);
+  --color-border-strong: var(--theme-border-strong);
+  --color-ring-default: var(--theme-ring);
+  --color-shadow-color: var(--theme-shadow-color);
+
+  --color-text-primary: var(--theme-text-primary);
+  --color-text-secondary: var(--theme-text-secondary);
+  --color-text-muted: var(--theme-text-muted);
+  --color-text-inverse: var(--theme-text-inverse);
+  --color-text-caption: var(--theme-text-caption);
+
+  --color-accent: var(--theme-accent);
+  --color-accent-hover: var(--theme-accent-hover);
+  --color-accent-light: var(--theme-accent-light);
+  --color-accent-mid: var(--theme-accent-mid);
+  --color-accent-surface: var(--theme-accent-surface);
+
+  --color-secondary: var(--theme-secondary);
+  --color-secondary-light: var(--theme-secondary-light);
+
+  --color-code-bg: var(--theme-code-bg);
+  --color-code-text: var(--theme-code-text);
+
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.5rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.75rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 2rem;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl: 2.5rem;
+  --text-4xl--line-height: 2.75rem;
+  --text-5xl: 3.5rem;
+  --text-5xl--line-height: 3.75rem;
+  --text-6xl: 4.5rem;
+  --text-6xl--line-height: 1;
+  --text-7xl: 5.5rem;
+  --text-7xl--line-height: 1;
+  --text-8xl: 7rem;
+  --text-8xl--line-height: 1;
+  --text-9xl: 9rem;
+  --text-9xl--line-height: 1;
+}
+
+@source "./src/**/*.njk";
+@source "./src/**/*.md";
+
+/* ═══════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════ */
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, code, pre {
+    font-family: var(--font-mono);
+  }
+
+  ::selection {
+    background-color: var(--theme-selection-bg);
+    color: var(--theme-selection-text);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--theme-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--theme-border-strong);
+    border-radius: var(--radius-full);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-text-muted);
+  }
+}
+
+/* ═══════════════════════════════════════
+   THEME-AWARE UTILITIES
+   ═══════════════════════════════════════ */
+
+@utility shadow-theme-sm {
+  box-shadow: var(--theme-shadow-sm);
+}
+@utility shadow-theme {
+  box-shadow: var(--theme-shadow-md);
+}
+@utility shadow-theme-lg {
+  box-shadow: var(--theme-shadow-lg);
+}
+@utility shadow-theme-xl {
+  box-shadow: var(--theme-shadow-xl);
+}
+
+@utility border-theme {
+  border: 1px solid var(--theme-border);
+}
+@utility border-theme-strong {
+  border: 1px solid var(--theme-border-strong);
+}
+
+@utility rounded-theme-sm {
+  border-radius: var(--radius-sm);
+}
+@utility rounded-theme {
+  border-radius: var(--radius-md);
+}
+@utility rounded-theme-lg {
+  border-radius: var(--radius-lg);
+}
+@utility rounded-theme-xl {
+  border-radius: var(--radius-xl);
+}
+@utility rounded-theme-2xl {
+  border-radius: var(--radius-2xl);
+}
+
+@utility animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Transition helper */
+@utility transition-theme {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}

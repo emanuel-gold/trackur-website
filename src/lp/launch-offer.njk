@@ -1,0 +1,162 @@
+---
+layout: layout.njk
+pageTitle: "Launch Offer — 40% Off"
+pageDescription: "Limited-time offer: Get Canopy Pro for 40% off annual plans. Start building better today."
+permalink: false
+---
+
+{# ── URGENCY BANNER ── #}
+<div class="mt-6 sm:mt-10 flex justify-center" style="animation: fadeInDown 0.5s ease-out both">
+  <div class="inline-flex items-center gap-2 px-4 py-2 bg-accent text-text-inverse rounded-theme-lg text-sm font-semibold shadow-theme">
+    <svg class="size-4 animate-pulse" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" opacity="0.3"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+    Launch Week Special — Offer Ends Soon
+  </div>
+</div>
+
+{# ── HERO ── #}
+<section class="mt-8 sm:mt-12 text-center max-w-3xl mx-auto">
+  <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl tracking-tight text-text-primary leading-[0.95]"
+      style="animation: fadeInUp 0.6s ease-out 0.1s both">
+    Get <span class="text-accent">40% off</span><br>your first year.
+  </h1>
+  <p class="mt-5 text-lg/7 text-text-secondary max-w-xl mx-auto"
+     style="animation: fadeInUp 0.6s ease-out 0.2s both">
+    We're celebrating our launch with an offer we'll never repeat. Lock in the lowest price Canopy Pro will ever be.
+  </p>
+</section>
+
+{# ── PRICING COMPARISON ── #}
+<section class="mt-12 sm:mt-16 max-w-lg mx-auto" style="animation: fadeInUp 0.6s ease-out 0.3s both">
+  <div class="relative p-8 sm:p-10 border-theme rounded-theme-2xl bg-surface shadow-theme-xl text-center overflow-hidden">
+    {# Decorative corner accent #}
+    <div class="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-bl-[4rem]"></div>
+
+    {# Badge #}
+    <div class="absolute -top-px left-1/2 -translate-x-1/2">
+      <span class="inline-flex items-center px-4 py-1.5 text-xs font-bold bg-accent text-text-inverse rounded-b-theme-lg uppercase tracking-wider">
+        Best Deal
+      </span>
+    </div>
+
+    <p class="text-sm font-semibold text-accent uppercase tracking-wide mt-4">Canopy Pro — Annual</p>
+
+    <div class="mt-5 flex items-baseline justify-center gap-3">
+      <span class="text-2xl text-text-muted line-through font-display">$29</span>
+      <span class="font-display text-6xl sm:text-7xl tracking-tight text-text-primary">$17</span>
+      <span class="text-base text-text-muted">/mo</span>
+    </div>
+    <p class="mt-2 text-sm text-text-secondary">Billed annually at $204/year <span class="text-text-muted line-through">$348</span></p>
+    <p class="mt-1 text-xs font-semibold text-accent">You save $144 per year</p>
+
+    <a href="/pricing/" class="mt-8 block w-full py-4 text-center text-base font-semibold bg-accent text-text-inverse rounded-theme-lg hover:bg-accent-hover shadow-theme hover:shadow-theme-lg transition-theme">
+      Claim Your 40% Discount
+    </a>
+    <a href="/pricing/" class="mt-3 block w-full py-3 text-center text-sm font-medium border-theme text-text-secondary rounded-theme-lg hover:text-accent hover:border-accent transition-theme">
+      Or start with the free plan
+    </a>
+
+    <div class="mt-6 pt-6 border-t border-border-default">
+      <div class="flex items-center justify-center gap-2 text-sm text-text-muted">
+        <svg class="size-4 text-accent" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        30-day money-back guarantee &middot; Cancel anytime
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ── WHAT YOU GET ── #}
+<section class="mt-16 sm:mt-24">
+  <h2 class="font-display text-2xl sm:text-4xl tracking-tight text-text-primary text-center">Everything in Pro</h2>
+  <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+    {% set proFeatures = [
+      "Unlimited team members",
+      "100 GB storage",
+      "AI-powered smart search",
+      "Unlimited integrations",
+      "Custom workflows & automations",
+      "Advanced analytics dashboard",
+      "Priority email & chat support",
+      "Custom branding & domains"
+    ] %}
+    {% for feat in proFeatures %}
+    <div class="flex items-start gap-3 p-4 rounded-theme-lg hover:bg-accent-surface/50 transition-theme"
+         style="animation: fadeInUp 0.4s ease-out {{ 0.05 * loop.index }}s both">
+      <svg class="size-5 mt-0.5 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span class="text-sm/6 text-text-primary font-medium">{{ feat }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# ── RISK REVERSAL ── #}
+<section class="mt-16 sm:mt-24">
+  <div class="p-8 sm:p-10 bg-bg-alt rounded-theme-2xl">
+    <div class="max-w-2xl mx-auto text-center">
+      <div class="size-14 flex items-center justify-center rounded-theme-xl bg-accent-light text-accent mx-auto mb-5">
+        <svg class="size-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h2 class="font-display text-2xl sm:text-3xl tracking-tight text-text-primary">Zero-risk guarantee</h2>
+      <p class="mt-3 text-text-secondary max-w-lg mx-auto">
+        Try Canopy Pro for 30 days. If it doesn't transform how your team works, we'll refund every penny — no questions asked. We're that confident.
+      </p>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-text-muted">
+        <div class="flex items-center gap-2">
+          <svg class="size-4 text-accent" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          30-day money back
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="size-4 text-accent" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          No questions asked
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="size-4 text-accent" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Cancel with one click
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ── SOCIAL PROOF ── #}
+<section class="mt-16 sm:mt-24">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+    {% set miniTestimonials = [
+      { "quote": "Switched from 4 different tools. Canopy pays for itself in the first week.", "name": "Jamie L.", "role": "Product Lead" },
+      { "quote": "The AI search alone is worth the price. My team finds everything instantly now.", "name": "Priya S.", "role": "Engineering Manager" }
+    ] %}
+    {% for t in miniTestimonials %}
+    <div class="p-5 border-theme rounded-theme-xl bg-surface">
+      <div class="flex gap-1 mb-3">
+        {% for star in range(0, 5) %}
+        <svg class="size-4 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        {% endfor %}
+      </div>
+      <p class="text-sm/6 text-text-primary italic">&ldquo;{{ t.quote }}&rdquo;</p>
+      <p class="mt-3 text-xs text-text-muted">{{ t.name }} &middot; {{ t.role }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# ── FINAL CTA ── #}
+<section class="mt-16 sm:mt-24 mb-12">
+  <div class="p-8 sm:p-12 bg-accent rounded-theme-2xl text-center">
+    <p class="text-sm font-semibold text-text-inverse/70 uppercase tracking-wide">Limited time offer</p>
+    <h2 class="mt-2 font-display text-3xl sm:text-4xl tracking-tight text-text-inverse">Don't miss 40% off.</h2>
+    <p class="mt-3 text-text-inverse/70 max-w-md mx-auto">This launch pricing won't last. Lock in your discount before it's gone.</p>
+    <a href="/pricing/" class="mt-6 inline-flex items-center px-8 py-4 text-base font-semibold bg-bg text-accent rounded-theme-lg hover:shadow-theme-xl transition-theme">
+      Claim Your Discount Now
+    </a>
+  </div>
+</section>
+
+<style>
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>

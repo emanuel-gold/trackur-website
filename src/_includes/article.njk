@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="mt-12 lg:mt-20">
+  <div class="max-w-3xl">
+    <a
+      href="/articles/"
+      aria-label="Go back to blog"
+      class="group inline-flex items-center gap-2 text-sm font-medium text-text-secondary hover:text-accent mb-8 transition-colors"
+    >
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="size-4 stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7.25 11.25 3.75 8m0 0 3.5-3.25M3.75 8h8.5" />
+      </svg>
+      Back to Blog
+    </a>
+    <article>
+      <header>
+        <time datetime="{{ date | isoDate }}" class="inline-block text-sm font-mono font-medium text-accent mb-3">
+          {{ date | formatDate }}
+        </time>
+        <h1 class="font-display text-3xl sm:text-5xl tracking-tight text-text-primary">
+          {{ title }}
+        </h1>
+        <div class="mt-6 w-16 h-1 bg-accent rounded-theme-sm"></div>
+      </header>
+      <div class="prose dark:prose-invert mt-10" data-mdx-content>
+        {{ content | safe }}
+      </div>
+    </article>
+  </div>
+</div>
+{% endblock %}
