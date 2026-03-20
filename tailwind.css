@@ -8,7 +8,7 @@
 
 /* ═══════════════════════════════════════
    TRACKUR THEME — Single theme, light + dark
-   Uses Tailwind v4 native palettes: mauve, mist, olive
+   Uses Tailwind v4 native palettes: violet, mauve, mist
    ═══════════════════════════════════════ */
 
 /* ─── Light mode ─── */
@@ -39,16 +39,16 @@
   --theme-text-secondary: var(--color-mist-600);
   --theme-text-muted: var(--color-mist-500);
   --theme-text-inverse: #FFFFFF;
-  --theme-text-caption: var(--color-olive-600);
+  --theme-text-caption: var(--color-mist-600);
 
   --theme-accent: var(--color-violet-600);
-  --theme-accent-hover: var(--color-mauve-800);
+  --theme-accent-hover: var(--color-violet-500);
   --theme-accent-light: var(--color-violet-100);
   --theme-accent-mid: var(--color-mauve-500);
   --theme-accent-surface: var(--color-mauve-50);
 
-  --theme-secondary: var(--color-olive-500);
-  --theme-secondary-light: var(--color-olive-50);
+  --theme-secondary: var(--color-mauve-500);
+  --theme-secondary-light: var(--color-mauve-50);
 
   --theme-selection-bg: var(--color-mauve-200);
   --theme-selection-text: var(--color-mauve-950);
@@ -82,17 +82,17 @@
   --theme-text-secondary: var(--color-mauve-200);
   --theme-text-muted: var(--color-mist-500);
   --theme-text-inverse: var(--color-mauve-950);
-  --theme-text-caption: var(--color-olive-400);
+  --theme-text-caption: var(--color-mist-400);
 
   /* Brighter accent for visibility */
   --theme-accent: var(--color-violet-400);
-  --theme-accent-hover: var(--color-mauve-200);
+  --theme-accent-hover: var(--color-violet-300);
   --theme-accent-light: var(--color-mauve-950);
   --theme-accent-mid: var(--color-mauve-400);
   --theme-accent-surface: var(--color-mauve-900);
 
-  --theme-secondary: var(--color-olive-400);
-  --theme-secondary-light: var(--color-olive-950);
+  --theme-secondary: var(--color-mauve-400);
+  --theme-secondary-light: var(--color-mauve-950);
 
   --theme-selection-bg: var(--color-mauve-600);
   --theme-selection-text: #FFFFFF;
