@@ -2,6 +2,7 @@
 title: "Why I built trackur"
 description: "I was tired of spreadsheets, annoyed by AI-bloated apps, and wanted to learn how to build something real."
 date: 2026-03-15
+permalink: false
 ---
 
 Every job search starts the same way. You apply to a few places, things seem manageable, and then suddenly you have fifteen tabs open and a spreadsheet that's getting out of hand.

@@ -2,6 +2,7 @@
 title: "The case against spreadsheet job tracking"
 description: "Spreadsheets work until they don't. Here's why a purpose-built tool makes your job search less painful."
 date: 2026-03-10
+permalink: false
 ---
 
 If you're tracking your job applications in a spreadsheet, you're in good company. Most people start there. It makes sense — you already know how to use it, it's free, and the barrier to entry is zero.
