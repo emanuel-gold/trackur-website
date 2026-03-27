@@ -21,5 +21,9 @@
     "luxon": "^3.0.0",
     "markdown-it-anchor": "^9.0.0",
     "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "prettier-plugin-jinja-template": "^2.1.0"
   }
 }
