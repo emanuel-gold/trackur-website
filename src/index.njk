@@ -6,9 +6,9 @@ layout: layout.njk
    SECTION 1: HERO
    ═══════════════════════════════════════ #}
 <section class="mt-12 sm:mt-14">
-  <div class="flex flex-col lg:flex-row lg:items-start lg:gap-12">
+  <div class="flex flex-col lg:flex-row lg:items-center lg:gap-12">
     <div class="lg:w-7/12 shrink-0">
-      <h1 class="font-display text-4xl sm:text-5xl lg:text-[4rem] lg:mt-18 tracking-tight text-text-primary leading-[0.9]">
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-[4rem] tracking-tight text-text-primary leading-[0.9]">
         Your job search,<br>
         <span class="text-accent">without the<br class="sm:hidden"> spreadsheets.</span>
       </h1>
@@ -26,10 +26,11 @@ layout: layout.njk
     </div>
 
     {# App screenshot placeholder #}
-    <div class="mt-16 flex max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:ml-10 lg:max-w-none lg:flex-none xl:ml-0">
+    <div class="mt-16 flex max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-0">
       <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-        <img width="2066" height="1508" src="/images/trackur-compact-hero.png" alt="Trackur App screenshot" class="w-250 rounded-theme-xl  bg-gray-50 shadow-xl ring-1 ring-gray-900/10 dark:hidden" />
-        <img width="2066" height="1508" src="/images/trackur-compact-hero-dark.png" alt="Trackur App screenshot" class="w-250 rounded-theme-xl  bg-white/5 shadow-2xl ring-1 ring-white/10 not-dark:hidden" />
+        {# TODO: add animation to this image #}
+        <img width="2066" height="1508" src="/images/trackur-compact-hero.png" alt="Trackur App screenshot" class="w-200 rounded-theme-xl  bg-gray-50 shadow-xl ring-1 ring-gray-900/10 dark:hidden" />
+        <img width="2066" height="1508" src="/images/trackur-compact-hero-dark.png" alt="Trackur App screenshot" class="w-200 rounded-theme-xl  bg-white/5 shadow-2xl ring-1 ring-white/10 not-dark:hidden" />
       </div>
     </div>
   </div>
