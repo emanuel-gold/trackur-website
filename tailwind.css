@@ -101,6 +101,10 @@
   --theme-code-text: var(--color-mist-100);
 }
 
+.slide-left {
+  animation: slide-left 0.65s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
 /* ═══════════════════════════════════════
    TAILWIND THEME — References CSS vars
    ═══════════════════════════════════════ */
@@ -253,14 +257,25 @@
   animation: marquee 30s linear infinite;
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
 /* Transition helper */
 @utility transition-theme {
   transition-property: color, background-color, border-color, box-shadow, transform, opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(130px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }

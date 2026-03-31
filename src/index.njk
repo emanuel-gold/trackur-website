@@ -9,8 +9,7 @@ layout: layout.njk
   <div class="flex flex-col lg:flex-row lg:items-center lg:gap-12">
     <div class="lg:w-7/12 shrink-0">
       <h1 class="font-display text-4xl sm:text-5xl lg:text-[4rem] tracking-tight text-text-primary leading-[0.9]">
-        Your job search,<br>
-        <span class="text-accent">without the<br class="sm:hidden"> spreadsheets.</span>
+        Your job search, <span class="text-accent">minus the spreadsheets.</span>
       </h1>
       <p class="mt-6 sm:mt-8 max-w-xl text-base/7 sm:text-xl/8 text-text-secondary font-light">
         Free and open-source job application tracker. Visualize each application's progress &amp; plan what's next, and what fell through—all on one screen.
@@ -25,12 +24,11 @@ layout: layout.njk
       </div>
     </div>
 
-    {# App screenshot placeholder #}
-    <div class="mt-16 flex max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-0">
+    {# App screenshot container #}
+    <div class="mt-16 flex max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-0 slide-left">
       <div class="max-w-4xl flex-none sm:max-w-5xl lg:max-w-none">
-        {# TODO: add animation to this image #}
-        <img width="2560" height="1286" src="/images/trackur-hero-light.webp" alt="Trackur App screenshot" class="w-350 rounded-theme-lg bg-gray-50 shadow-xl ring-1 ring-gray-900/10 dark:hidden" />
-        <img width="2560" height="1286" src="/images/trackur-hero-dark.webp" alt="Trackur App screenshot" class="w-350 rounded-theme-lg bg-white/5 shadow-2xl ring-1 ring-white/10 not-dark:hidden" />
+        <img width="2560" height="1286" src="/images/trackur-hero-light.webp" alt="Trackur App screenshot" class="rounded-theme-lg bg-gray-50 shadow-xl ring-1 ring-gray-900/10 w-250 md:w-290 xl:w-310 dark:hidden" />
+        <img width="2560" height="1286" src="/images/trackur-hero-dark.webp" alt="Trackur App screenshot" class="rounded-theme-lg bg-white/5 shadow-2xl ring-1 ring-white/10 w-250 md:w-290 xl:w-310 not-dark:hidden" />
       </div>
     </div>
   </div>
