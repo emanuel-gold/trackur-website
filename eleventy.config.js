@@ -10,9 +10,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "styles": "/css" });
 
   // Collections
-  eleventyConfig.addCollection("articles", function (collectionApi) {
+  eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi
-      .getFilteredByGlob("src/articles/*.md")
+      .getFilteredByGlob("src/blog/*.md")
       .sort((a, b) => b.date - a.date);
   });
 
