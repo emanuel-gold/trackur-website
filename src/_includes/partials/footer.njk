@@ -5,13 +5,32 @@
       <div class="text-center max-w-2xl mx-auto">
         <h2 class="font-display text-3xl sm:text-5xl tracking-tight text-text-primary">Stay in the loop</h2>
         <p class="mt-4 text-text-secondary">Product updates, new features, and the occasional thought on job searching.</p>
-        <form action="/thank-you/" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        {# TODO turnstile or captcha #}
+        <form action="https://submit-form.com/AekC1bSTr" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <input
             type="email"
+            name="email"
             placeholder="Enter your email"
             aria-label="Email address"
             required
             class="flex-1 px-4 py-3 text-sm bg-surface border-theme rounded-theme text-text-primary placeholder:text-text-muted focus:outline-hidden focus:ring-2 focus:ring-ring-default"
+          />
+          <input
+            type="hidden"
+            name="_redirect"
+            value="https://trackur.app/thank-you/"
+          />
+          <input 
+            type="hidden" 
+            name="_append" 
+            value="false" 
+          />
+          <input
+            type="checkbox"
+            name="_honeypot"
+            style="display:none"
+            tabindex="-1"
+            autocomplete="off"
           />
           <button type="submit" class="px-6 py-3 text-sm font-semibold bg-accent text-text-inverse rounded-theme hover:bg-accent-hover transition-theme">
             Subscribe
