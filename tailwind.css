@@ -25,7 +25,7 @@
   --radius-full: 9999px;
 
   --theme-bg: #FFFFFF;
-  --theme-bg-alt: var(--color-mist-50);
+  --theme-bg-alt: var(--color-mist-200);
   --theme-surface: #FFFFFF;
   --theme-surface-muted: var(--color-mist-100);
   --theme-surface-overlay: rgba(0, 0, 0, 0.5);
