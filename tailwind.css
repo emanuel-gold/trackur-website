@@ -80,7 +80,7 @@
   /* Warmer text hierarchy */
   --theme-text-primary: var(--color-mist-100);
   --theme-text-secondary: var(--color-mauve-200);
-  --theme-text-muted: var(--color-mist-500);
+  --theme-text-muted: var(--color-mist-400);
   --theme-text-inverse: var(--color-mauve-950);
   --theme-text-caption: var(--color-mist-400);
 

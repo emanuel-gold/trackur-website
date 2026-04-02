@@ -41,14 +41,14 @@
     <div class="py-8 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
       <div class="flex flex-wrap gap-x-1 gap-y-1">
         {% for item in navigation %}
-        <a href="{{ item.href }}" class="px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+        <a href="{{ item.href }}" class="px-3 py-1.5 text-sm font-medium text-text-muted hover:text-text-primary transition-colors">
           {{ item.label }}
         </a>
         {% endfor %}
-        <a href="/privacy/" class="px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+        <a href="/privacy/" class="px-3 py-1.5 text-sm font-medium text-text-muted hover:text-text-primary transition-colors">
           Privacy
         </a>
-        <a href="/terms/" class="px-3 py-1.5 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+        <a href="/terms/" class="px-3 py-1.5 text-sm font-medium text-text-muted hover:text-text-primary transition-colors">
           Terms
         </a>
       </div>
