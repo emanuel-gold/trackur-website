@@ -27,8 +27,8 @@ layout: layout.njk
     {# App screenshot container #}
     <div class="mt-16 flex max-w-2xl sm:mt-24 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-0 slide-left">
       <div class="max-w-4xl flex-none sm:max-w-5xl lg:max-w-none">
-        <img width="2560" height="1286" src="/images/trackur-hero-light.webp" alt="Trackur App screenshot" class="rounded-theme-lg bg-gray-50 shadow-xl ring-1 ring-gray-900/10 w-250 md:w-290 xl:w-310 dark:hidden" />
-        <img width="2560" height="1286" src="/images/trackur-hero-dark.webp" alt="Trackur App screenshot" class="rounded-theme-lg bg-white/5 shadow-2xl ring-1 ring-white/10 w-250 md:w-290 xl:w-310 not-dark:hidden" />
+        <img width="2560" height="1286" src="/images/trackur-hero-light.webp" srcset="/images/trackur-hero-light-1024.webp 1024w, /images/trackur-hero-light-1536.webp 1536w, /images/trackur-hero-light.webp 2560w" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1240px" fetchpriority="high" alt="Trackur App screenshot" class="rounded-theme-lg bg-gray-50 shadow-xl ring-1 ring-gray-900/10 w-250 md:w-290 xl:w-310 dark:hidden" />
+        <img width="2560" height="1286" src="/images/trackur-hero-dark.webp" srcset="/images/trackur-hero-dark-1024.webp 1024w, /images/trackur-hero-dark-1536.webp 1536w, /images/trackur-hero-dark.webp 2560w" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 80vw, 1240px" fetchpriority="high" alt="Trackur App screenshot" class="rounded-theme-lg bg-white/5 shadow-2xl ring-1 ring-white/10 w-250 md:w-290 xl:w-310 not-dark:hidden" />
       </div>
     </div>
   </div>
