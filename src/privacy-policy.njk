@@ -115,20 +115,24 @@ permalink: /privacy-policy/
   </p>
   <ul>
     <li>
-      We request only Google's read-only Drive scope
-      (<code>drive.readonly</code>). We cannot create, rename, move, share, or
-      delete anything in your Drive.
+      We request only Google's per-file Drive scope
+      (<code>drive.file</code>). This scope grants Trackur access only to the
+      specific files you pick through Google's Picker inside Trackur — Google
+      itself enforces this at the API level. We cannot list, search, or read
+      any other file in your Drive, and we cannot create, rename, move, share,
+      or delete anything in your Drive.
     </li>
     <li>
       We store your Drive access token and refresh token on our server so we
-      can download the specific files you link to Trackur jobs. These tokens
-      never leave our server — your browser does not see them.
+      can download the files you link to Trackur jobs. These tokens never
+      leave our server — your browser does not see them. Even with these
+      tokens, the <code>drive.file</code> scope limits what Trackur can reach
+      to the files you have explicitly picked.
     </li>
     <li>
       When you pick a file through Google's Picker, we record only that file's
-      Drive ID, name, MIME type, and icon URL. We do not list, index, or
-      otherwise read the rest of your Drive, and we do not access files you
-      did not explicitly pick.
+      Drive ID, name, MIME type, and icon URL. We do not access files you did
+      not explicitly pick.
     </li>
     <li>
       When you download a linked Drive file from Trackur, our server fetches
